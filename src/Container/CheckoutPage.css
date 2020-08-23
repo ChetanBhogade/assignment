@@ -1,0 +1,15 @@
+.layout {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mybtn .btnStyle {
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
