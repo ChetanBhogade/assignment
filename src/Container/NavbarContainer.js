@@ -1,17 +1,23 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button } from "@material-ui/core"
+import { AppBar, Toolbar, Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
+
+import "./NavbarContainer.css";
 
 function NavbarContainer() {
   return (
     <div>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" style={{ flex: 1 }}>
-            Chetan Bhogade
-          </Typography>
-          <Button color="inherit">Signup</Button>
-          <Button color="inherit">Product List</Button>
-          <Button color="inherit">Checkout Page</Button>
+          <Button color="inherit">
+            <Link to="/" className="myLink">Signup</Link>
+          </Button>
+          <Button color="inherit">
+            <Link to="/products" className="myLink">Product List</Link>
+          </Button>
+          <Button color="inherit">
+            <Link to="/checkout" className="myLink">Checkout Page</Link>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>
