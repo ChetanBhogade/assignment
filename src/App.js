@@ -13,7 +13,7 @@ function App() {
       <Router>
         <NavbarContainer />
         <div>
-          <Route exact path="/" component={SignUpPage} />
+          <Route exact path="/assignment" component={SignUpPage} />
           <Route exact path="/products" component={ProductListPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
         </div>

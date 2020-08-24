@@ -10,7 +10,7 @@ function NavbarContainer() {
       <AppBar position="static">
         <Toolbar>
           <Button color="inherit">
-            <Link to="/" className="myLink">Signup</Link>
+            <Link to="/assignment" className="myLink">Signup</Link>
           </Button>
           <Button color="inherit">
             <Link to="/products" className="myLink">Product List</Link>
