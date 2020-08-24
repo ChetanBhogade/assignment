@@ -18,7 +18,7 @@ function AddressForm(props) {
   const [pin, setPin] = useState("");
   const [country, setCountry] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     const name = `${fname} ${lname}`;
     const finalAddress = [addr1, addr2, city, state, pin, country];
     props.sendName(name);
@@ -154,8 +154,8 @@ function AddressForm(props) {
         <Button
           variant="contained"
           color="primary"
-          onClick={(e) => {
-            handleSubmit(e);
+          onClick={() => {
+            handleSubmit();
           }}
           className="btnStyle"
         >

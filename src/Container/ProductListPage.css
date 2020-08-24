@@ -3,16 +3,53 @@
   padding-bottom: 8px;
 }
 
-.card {
+.cardGrid .fliterSection {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.cardGrid .fliterSection .innerFilter {
+  display: flex;
+  margin-left: 15px;
+}
+
+.cardGrid .fliterSection .innerFilter .filterForm {
+  min-width: 120px;
+  margin-left: 15px;
+}
+
+.cardGrid .fliterSection .searchForm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cardGrid .fliterSection .searchForm .searchIcon {
+  background-color: #0984e3;
+  margin-left: 10px;
+  color: #ffffff;
+}
+
+.cardGrid .listContainer {
+  margin-top: 10px;
+}
+
+.cardGrid .listContainer .card {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.cardContent {
+.cardGrid .listContainer .card .cardContent {
   flex: 1;
 }
 
-.searchIcon {
-  color: #ffffff;
+.cardGrid .listContainer .card .cardContent .cardPrice {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }

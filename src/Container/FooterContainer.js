@@ -1,17 +1,11 @@
 import React from "react";
 import { Container, Typography, Link } from "@material-ui/core";
 
+import "./FooterContainer.css";
+
 function FooterContainer() {
   return (
-    <div
-      style={{
-        marginTop: 20,
-        paddingBottom: 20,
-        backgroundColor: "#ecf0f1",
-        paddingTop: 10,
-      }}
-    >
-      {/* <hr /> */}
+    <div className="footerStyle">
       <Container maxWidth="lg">
         <Typography
           variant="subtitle1"

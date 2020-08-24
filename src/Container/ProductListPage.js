@@ -18,6 +18,7 @@ import {
 import SearchIcon from "@material-ui/icons/Search";
 
 import img from "../Assets/second-img.jpg";
+import "./ProductListPage.css";
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -36,19 +37,10 @@ function ProductListPage() {
   return (
     <div>
       <Container className="cardGrid" maxWidth="md">
-        <div
-          style={{
-            textAlign: "center",
-            marginTop: 10,
-            marginBottom: 15,
-            padding: 5,
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+        <div className="fliterSection">
+          <div className="innerFilter">
             <h3>Filter By: </h3>
-            <FormControl style={{ minWidth: 120, marginLeft: 15 }}>
+            <FormControl className="filterForm">
               <InputLabel id="fliter-by-price">Price</InputLabel>
               <Select
                 labelId="fliter-by-price"
@@ -61,7 +53,7 @@ function ProductListPage() {
                 <MenuItem value="50K - 100K">50K - 100K</MenuItem>
               </Select>
             </FormControl>
-            <FormControl style={{ minWidth: 120, marginLeft: 15 }}>
+            <FormControl className="filterForm">
               <InputLabel id="fliter-by-price">Category</InputLabel>
               <Select
                 labelId="fliter-by-price"
@@ -76,33 +68,20 @@ function ProductListPage() {
               </Select>
             </FormControl>
           </div>
-          <form
-            style={{
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
-            }}
-          >
+          <form className="searchForm">
             <TextField id="search" label="Search Product" variant="outlined" />
-            <Avatar
-              className="searchIcon"
-              style={{
-                backgroundColor: "#0984e3",
-                marginLeft: 10,
-              }}
-            >
+            <Avatar className="searchIcon">
               <SearchIcon />
             </Avatar>
           </form>
         </div>
-        {/* End hero unit */}
         <hr />
-        <Grid container style={{ marginTop: 10 }} spacing={4}>
+        <Grid container className="listContainer" spacing={4}>
           {cards.map((card) => (
             <Grid item key={card} xs={12} sm={6} md={4}>
               <Card className="card">
                 <CardMedia
-                  style={{ paddingTop: "56.25%" }}
+                  style={{ paddingTop: "56%" }}
                   image={img}
                   title="Image title"
                 />
@@ -116,16 +95,7 @@ function ProductListPage() {
                   <Typography>
                     Short description about product details.
                   </Typography>
-                  <h5
-                    style={{
-                      textDecoration: "none",
-                      marginTop: 0,
-                      marginBottom: 0,
-                    }}
-                  >
-                    {" "}
-                    $ 2050
-                  </h5>
+                  <h5 className="cardPrice">$ 2050</h5>
                 </CardContent>
                 <CardActions>
                   <Button size="small" color="primary">
