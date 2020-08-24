@@ -5,6 +5,7 @@ import NavbarContainer from "./Container/NavbarContainer";
 import SignUpPage from "./Container/SignUpPage";
 import ProductListPage from "./Container/ProductListPage";
 import CheckoutPage from "./Container/CheckoutPage";
+import FooterContainer from "./Container/FooterContainer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/products" component={ProductListPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
         </div>
+        <FooterContainer />
       </Router>
     </div>
   );
