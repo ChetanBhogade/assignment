@@ -7,6 +7,12 @@ import ProductListPage from "./Container/ProductListPage";
 import CheckoutPage from "./Container/CheckoutPage";
 import FooterContainer from "./Container/FooterContainer";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import * as firebase from "firebase";
+// import { firebaseConfig } from "./Config"
+
+// firebase.initializeApp(firebaseConfig);
+
 function App() {
   return (
     <div className="App">
