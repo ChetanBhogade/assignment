@@ -16,8 +16,7 @@ import {
   MenuItem,
 } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
-import * as firebase from "firebase";
-import { firebaseConfig } from "../Config";
+import { db } from "../Config";
 import { Modal, Carousel } from "react-bootstrap";
 
 // import img from "../Assets/second-img.jpg";
@@ -25,9 +24,6 @@ import "./ProductListPage.css";
 
 // const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-firebase.initializeApp(firebaseConfig);
-
-var db = firebase.firestore();
 
 function ProductListPage() {
   const [price, setPrice] = useState("");
